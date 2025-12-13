@@ -13,8 +13,7 @@ This project demonstrates **real-world problem solving**, **file-based data pers
 ---
 ## UOM SharRider Visualizer 
 The visualizer is actually the summary of our C++ code, it visually explains what our program is doing, for what purpose we make it, and how our program works.
-🔗 Link to Visualizer:
-"E:\1st semester Documents\C++ language Documents\UOM SharRider visualizer by Sudais Ahmad.html"
+🔗 Link to Visualizer:file:///E:/1st%20semester%20Documents/C++%20language%20Documents/UOM%20SharRider%20visualizer%20by%20Sudais%20Ahmad.html
 
 ## 🎯 Project Objectives
 
@@ -224,5 +223,5 @@ This project is developed as part of a **University Programming / Software Engin
 ## 👤 Author
 
 **Sudais Ahmad**
-BS Aritifical Intellegence at UOM(University Of Malakand)
+BS Artificial Intelligence at UOM(University Of Malakand)
 University Project – Ride Sharing System (C++)
