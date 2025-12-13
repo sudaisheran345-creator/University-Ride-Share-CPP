@@ -1,23 +1,6 @@
 # University-Ride-Share-CPP
 A C++ console application connecting students for shared commutes.
 
-
-
-
-Perfect — I understand **exactly** what you want 👍
-You want a **complete, detailed, highly professional README.md** for **YOUR project**, written at a level that:
-
-* Impresses your **teacher**
-* Looks **better than your friend’s README**
-* Feels like a **real software engineering project**
-* Is **academic, structured, and clean**
-* Matches your **University Ride Share (C++)** project
-
-Below is a **FULL README.md**.
-👉 **You can copy–paste this directly into your `README.md` file**.
-
----
-
 # 🚗 University Ride Share System (C++)
 
 ## Overview
@@ -28,6 +11,10 @@ The system enables efficient ride coordination, reduces transportation costs, an
 This project demonstrates **real-world problem solving**, **file-based data persistence**, and **structured program design** using core C++ concepts.
 
 ---
+## UOM SharRider Visualizer 
+The visualizer is actually the summary of our C++ code, it visually explains what our program is doing, for what purpose we make it, and how our program works.
+🔗 Link to Visualizer:
+"E:\1st semester Documents\C++ language Documents\UOM SharRider visualizer by Sudais Ahmad.html"
 
 ## 🎯 Project Objectives
 
@@ -197,11 +184,6 @@ Ali|Saddar|Library|ali.png
 
 A **visual prototype** is included to represent a **future GUI / web or mobile version** of the system.
 
-📁 Prototype documentation and live link:
-
-```
-Prototype/README.md
-```
 
 🔗 Live Prototype:
 [https://cqk7zv5ge23tg.ok.kimi.link/](https://cqk7zv5ge23tg.ok.kimi.link/)
@@ -242,23 +224,5 @@ This project is developed as part of a **University Programming / Software Engin
 ## 👤 Author
 
 **Sudais Ahmad**
-Computer Science Student
+BS Aritifical Intellegence at UOM(University Of Malakand)
 University Project – Ride Sharing System (C++)
-
----
-
-## ⭐ Final Note
-
-This project reflects **practical software development skills**, clear documentation, and a scalable design approach suitable for **academic evaluation and future enhancement**.
-
----
-
-If you want next:
-
-* 📄 **Project proposal**
-* 🧠 **Viva preparation**
-* 🔧 **Convert this to OOP**
-* 🖥 **GUI version plan**
-* 📊 **UML diagrams**
-
-Just tell me — I’ll help you step by step 💪
