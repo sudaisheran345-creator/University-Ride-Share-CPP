@@ -12,8 +12,17 @@ This project demonstrates **real-world problem solving**, **file-based data pers
 
 ---
 ## UOM SharRider Visualizer 
+
+
+
+
 The visualizer is actually the summary of our C++ code, it visually explains what our program is doing, for what purpose we make it, and how our program works.
 🔗 Link to Visualizer:https://claude.ai/chat/404a971d-a320-4bfe-9143-3c6134c74fe2?artifactId=standalone_visualizer
+
+
+
+
+
 ## 🎯 Project Objectives
 
 * Connect students traveling to the **same destination**
@@ -180,11 +189,20 @@ Ali|Saddar|Library|ali.png
 
 ## 🎨 Prototype
 
+
+
+
+
+
 A **visual prototype** is included to represent a **future GUI / web or mobile version** of the system.
 
 
 🔗 Live Prototype:
 [https://cqk7zv5ge23tg.ok.kimi.link/](https://cqk7zv5ge23tg.ok.kimi.link/)
+
+
+
+
 
 ---
 
@@ -210,7 +228,7 @@ A **visual prototype** is included to represent a **future GUI / web or mobile v
 
 ## 🎓 Academic Context
 
-This project is developed as part of a **University Programming / Software Engineering course** to demonstrate:
+This project is developed as part of a **University Programming ** to demonstrate:
 
 * Structured programming in C++
 * File-based data management
@@ -222,5 +240,5 @@ This project is developed as part of a **University Programming / Software Engin
 ## 👤 Author
 
 **Sudais Ahmad**
-BS Artificial Intelligence at UOM(University Of Malakand)
+BS Artificial Intelligence at UOM (University Of Malakand)
 University Project – Ride Sharing System (C++)
