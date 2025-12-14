@@ -254,5 +254,5 @@ This project is developed as part of a **University Programming ** to demonstrat
 ## 👤 Author
 
 **Sudais Ahmad**
-BS Artificial Intelligence at UOM (University Of Malakand)
+BS Artificial Intelligence Student at UOM (University Of Malakand)
 University Project – Ride Sharing System (C++)
