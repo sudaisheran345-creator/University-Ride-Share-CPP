@@ -205,6 +205,17 @@ A **visual prototype** is included to represent a **future GUI / web or mobile v
 
 
 
+Purpose of Prototype
+
+1. Visualize how students interact with the system
+2 . Represent the future GUI / web or mobile version
+2 . Support the project proposal and presentation
+
+Notes:
+
+1. Current implementation is C++ console-based
+2. Prototype represents a future UI extension
+
 
 
 ---
