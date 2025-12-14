@@ -13,8 +13,7 @@ This project demonstrates **real-world problem solving**, **file-based data pers
 ---
 ## UOM SharRider Visualizer 
 The visualizer is actually the summary of our C++ code, it visually explains what our program is doing, for what purpose we make it, and how our program works.
-🔗 Link to Visualizer:file:///E:/1st%20semester%20Documents/C++%20language%20Documents/UOM%20SharRider%20visualizer%20by%20Sudais%20Ahmad.html
-
+🔗 Link to Visualizer:https://claude.ai/chat/404a971d-a320-4bfe-9143-3c6134c74fe2?artifactId=standalone_visualizer
 ## 🎯 Project Objectives
 
 * Connect students traveling to the **same destination**
