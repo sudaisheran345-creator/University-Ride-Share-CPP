@@ -1,8 +1,4 @@
-# University Ride Share (C++)
-Console-based ride-sharing system for students.
 
-# University-Ride-Share-CPP
-A C++ console application connecting students for shared commutes.
 
 # 🚗 University Ride Share System (C++)
 
