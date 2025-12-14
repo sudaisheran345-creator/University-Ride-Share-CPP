@@ -1,4 +1,4 @@
-UOM SharRider Visualizer
+##UOM SharRider Visualizer##
 
 The UOM SharRider Visualizer serves as a conceptual and visual representation of our C++ application. It acts as a summarized overview of the core logic, workflow, and objectives of the system, allowing viewers to understand the program without directly analyzing the source code.
 
