@@ -11,7 +11,6 @@ struct Student {
     char name[50];
     char destination[50];
     char currentLocation[50];
-    char photoName[50];
 };
 
 // --- FUNCTION PROTOTYPES ---
@@ -107,29 +106,26 @@ int loadStudentsFromFile(Student arr[], int maxSize) {
     while (inFile.getline(line, 300) && count < maxSize) {
         if (strlen(line) == 0) continue; // Skip empty lines
         
-        char d_name[50], d_dest[50], d_loc[50], d_photo[50];
+        char d_name[50], d_dest[50], d_loc[50];
         
         int part = 0, j = 0;
         for (int i = 0; line[i] != '\0'; i++) {
             if (line[i] == '|') {
                 if(part == 0) d_name[j] = '\0';
                 else if(part == 1) d_dest[j] = '\0';
-                else if(part == 2) d_loc[j] = '\0';
                 part++;
                 j = 0;
             } else {
                 if(part == 0) d_name[j++] = line[i];
                 else if(part == 1) d_dest[j++] = line[i];
                 else if(part == 2) d_loc[j++] = line[i];
-                else if(part == 3) d_photo[j++] = line[i];
             }
         }
-        d_photo[j] = '\0';
+        d_loc[j] = '\0';
 
         strcpy(arr[count].name, d_name);
         strcpy(arr[count].destination, d_dest);
         strcpy(arr[count].currentLocation, d_loc);
-        strcpy(arr[count].photoName, d_photo);
         count++;
     }
 
@@ -150,8 +146,7 @@ void saveAllStudentsToFile(Student arr[], int count) {
     for (int i = 0; i < count; i++) {
         outFile << arr[i].name << "|" 
                 << arr[i].destination << "|" 
-                << arr[i].currentLocation << "|" 
-                << arr[i].photoName << endl;
+                << arr[i].currentLocation << endl;
     }
 
     outFile.close();
@@ -175,12 +170,6 @@ void registerStudent() {
     cout << "Enter your Current Location (e.g., Library, Cafe): ";
     cin.getline(newStudent.currentLocation, 50);
 
-    cout << "Enter Photo Filename (Optional, press Enter to skip): ";
-    cin.getline(newStudent.photoName, 50);
-    if (strlen(newStudent.photoName) == 0) {
-        strcpy(newStudent.photoName, "default.png");
-    }
-
     // Check if student exists (update) or add new
     bool found = false;
     for (int i = 0; i < studentCount; i++) {
@@ -188,9 +177,8 @@ void registerStudent() {
             // Update existing student
             strcpy(students[i].destination, newStudent.destination);
             strcpy(students[i].currentLocation, newStudent.currentLocation);
-            strcpy(students[i].photoName, newStudent.photoName);
             found = true;
-            cout << "\n? SUCCESS: Your details have been UPDATED!\n";
+            cout << "\n✓ SUCCESS: Your details have been UPDATED!\n";
             break;
         }
     }
@@ -202,7 +190,7 @@ void registerStudent() {
         }
         students[studentCount] = newStudent;
         studentCount++;
-        cout << "\n? SUCCESS: You have been registered!\n";
+        cout << "\n✓ SUCCESS: You have been registered!\n";
     }
 
     // Save back to file
@@ -229,14 +217,13 @@ void findRidePartners() {
 
     cout << "\nSearching for students going to: " << targetDest << "...\n";
     cout << "-----------------------------------------------------------\n";
-    cout << "Name\t\tCurrent Location\tPhoto\n";
-    cout << "----\t\t----------------\t-----\n";
+    cout << "Name\t\tCurrent Location\n";
+    cout << "----\t\t----------------\n";
 
     for (int i = 0; i < studentCount; i++) {
         if (strcasecmp(students[i].destination, targetDest) == 0) {
             cout << students[i].name << "\t\t" 
-                 << students[i].currentLocation << "\t\t[" 
-                 << students[i].photoName << "]\n";
+                 << students[i].currentLocation << "\n";
             found = true;
         }
     }
@@ -284,7 +271,7 @@ void clearAllData() {
     }
 
     char confirm;
-    cout << "\n??  WARNING: This will delete ALL " << studentCount << " student records!\n";
+    cout << "\n⚠️  WARNING: This will delete ALL " << studentCount << " student records!\n";
     cout << "Are you sure? (y/n): ";
     cin >> confirm;
     cin.ignore();
@@ -293,7 +280,7 @@ void clearAllData() {
         // Clear file by opening in truncate mode
         ofstream outFile(DB_FILE, ios::trunc);
         outFile.close();
-        cout << "? All data has been permanently deleted.\n";
+        cout << "✓ All data has been permanently deleted.\n";
     } else {
         cout << "Operation cancelled.\n";
     }
